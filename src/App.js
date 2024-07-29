@@ -1,23 +1,74 @@
 import logo from './logo.svg';
+import product1 from './product 1logo.png';
+import product2 from './product 2logo.png';
+import logo1 from './achievements1.png';
+import logo2 from './achievements2.jpg';
+import logo3 from './achievements3.png';
+import award from './award.png';
+
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+
 
 function App() {
   return (
+    // <div className="App">
+      
+    //     <img src={banner} className="App-logo" alt="logo" />
+      
+    // </div>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="banner">
+        <div className="content">
+          <h1>About Us</h1>
+          <p>Since 2015, DevQAExpert has been a leader in innovative testing solutions. We offer time-efficient and budget-friendly services that leverage the latest technologies for unmatched test coverage.<br></br>
+          DevQAExpert is the innovative force behind QAEverest and FindMyLocator.<br></br> We are dedicated to empowering businesses with cutting-edge testing tools that streamline processes and ensure exceptional quality.
+          </p>
+          <p><h3>QAEverest and FindMyLocator</h3> represent our commitment to staying at the forefront of testing technology. </p>
+        </div>
+      </div>
+      <h1>Our Products</h1>
+      
+      <div className="product">
+        <div class="row">
+            <div class="col-md-6 how-img">
+               <img src={product1}class=" img-fluid" alt=""/>
+            </div>
+            <div class="col-md-6">
+              <h4>FindMyLocator</h4>
+              <h4 class="subheading">Effortless Element Identification</h4>
+              <p class="text-muted"> Locate unique elements within the Document Object Model (DOM) structure with just a single click. No more manual searching!</p>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>QAEverest</h4>
+            <h4 class="subheading">GetLance makes it easy to connect with clients and begin doing great work.</h4>
+            <p class="text-muted">This groundbreaking platform leverages AI to automate manual test case generation, enabling faster and more efficient testing cycles</p>
+            </div>
+            <div class="col-md-6 how-img">
+            <img src={product2} class=" img-fluid" alt=""/>
+          </div>
+        </div>
+        
+      </div>
+      <h1>Our Achievements</h1>
+      <div className="Achievements">
+        <div className="logo-item">
+          <img src={award} alt="Logo 1" className="logo-image" />
+          <p>Awarded “Most Trusted Software Testing Company in Central India”<br></br> by the National Quality Awards 2023
+          </p>
+        </div>
+        <div className="logo-item">
+          <img src={logo2} alt="Logo 2" className="logo-image" />
+          <p>Recognised as 20 Most Promising Startups to Watch-2023 by Businessconnectindia
+          </p>
+        </div>
+        <div className="logo-item">
+          <img src={logo3} alt="Logo 3" className="logo-image" />
+          <p> AI based Software Testing Device</p>
+        </div>
+      </div>
     </div>
   );
 }
