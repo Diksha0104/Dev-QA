@@ -53,6 +53,7 @@ body, html {
   background-color: #eeeeee;
   box-shadow: 10px 10px 5px lightblue;
   border-radius: 25px;
+  height: 320px;
 }
 .product .row
 {
@@ -64,6 +65,7 @@ body, html {
 }
 .product-img img{
   width: 40%;
+  height: 40%;
 }
 
 .Achievements {

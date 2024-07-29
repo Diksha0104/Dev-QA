@@ -35,7 +35,7 @@ function App() {
       <div className="product">
         <div class="row">
             <div class="col-md-6 how-img">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  data-interval="3000">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src={findmylocator} alt="Logo 1" className="product-images" />
@@ -68,7 +68,7 @@ function App() {
             <p class="text-muted">This groundbreaking platform leverages AI to automate manual test case generation, enabling faster and more efficient testing cycles</p>
             </div>
             <div class="col-md-6 how-img">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"data-interval="3000">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src={product2} alt="Logo 1" className="product-images" />
@@ -94,7 +94,7 @@ function App() {
       </div>
       
       <h1>Our Achievements</h1>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"data-interval="3000">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src={award} alt="Logo 1" className="achievement-image" />
