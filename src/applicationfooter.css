@@ -1,0 +1,105 @@
+/* applicationfooter.css */
+.navbar-logo img {
+  height: 40px; /* Adjust height as needed */
+  margin-right: 20px; /* Adjust margin as needed */
+  margin-left: 10px;
+}
+
+.footer-home {
+  background-color: black;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer-home-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-home-left,
+.footer-home-center,
+.footer-home-right {
+  color: #fff;
+}
+
+.footer-home-left {
+  flex: 1;
+  text-align: left;
+  margin-left: -40px;
+}
+
+.footer-home-center {
+  flex: 1;
+  text-align: center;
+  margin-left: 90px;
+}
+
+.footer-home-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-home a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-home a:hover {
+  color: #ddd;
+}
+
+@media screen and (min-width: 333px) and (max-width: 824px) {
+  .footer-home-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-home-left,
+  .footer-home-center,
+  .footer-home-right {
+    margin-left: 0;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .footer-home-center {
+    margin-left: 0;
+  }
+}
+
+/* New styles for screens between 825px and 1100px */
+@media screen and (min-width: 825px) and (max-width: 1100px) {
+  .footer-home-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-home-left,
+  .footer-home-center,
+  .footer-home-right {
+    margin-left: 20px; /* Adjust margin for spacing */
+  }
+}
+
+/* New styles for screens between 1101px and 1473px */
+@media screen and (min-width: 1101px) and (max-width: 1473px) {
+  .footer-home-wrapper {
+    max-width: 1078px; /* Adjust max-width for this range */
+  }
+
+  .footer-home-left {
+    margin-left: 0px; /* Reset margin-left for .footer-home-left */
+    text-align: left;
+  }
+
+  .footer-home-center {
+    margin-left: 50px; /* Adjust margin-left for .footer-home-center */
+  }
+}
