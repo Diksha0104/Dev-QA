@@ -44,52 +44,49 @@ body, html {
   color: black;
 }
 
-/* .product{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 2.5rem;
-  height: 150%;
-}
-.product-container .product-box{
-  position: relative;
-  border-radius: 2rem;
-  box-shadow: 0 4px 10px var(--main-color);
-  overflow: hidden;
-  display: flex;
-  height: 25rem;
-  
-}*/
 .product{
   margin-top:-15%;
   padding: 10%;
 }
-
+.product-info{
+  padding: 30px;
+  background-color: #eeeeee;
+  box-shadow: 10px 10px 5px lightblue;
+  border-radius: 25px;
+}
 .product .row
 {
   margin-top: 10%;
 }
-.how-img 
+.product-img 
 {
   text-align: center;
 }
-.how-img img{
+.product-img img{
   width: 40%;
 }
 
 .Achievements {
   display: flex;
-  flex-direction: row; /* Align items in a column */
-  
-  justify-content: center; /* Center items vertically */
- 
+  gap: 20px; /* Adjust the gap between logo items if needed */
 }
 
 .logo-item {
-  margin: 70px; /* Space between logos */
+  flex: 1; /* Ensure all logo items take up the same amount of space */
+  text-align: center; /* Center the text and images */
+  padding: 20px; /* Add padding for some spacing inside the boxes */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px; /* Set a fixed height */
+  width: 200px; /* Set a fixed width */
 }
 
 .logo-image {
-  width: 150px; /* Adjust width as needed */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure the image doesn't overflow */
+  max-height: 100%; /* Ensure the image doesn't overflow */
+  margin-bottom: 10px; /* Add some space between the image and the text */
 }

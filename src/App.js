@@ -1,10 +1,11 @@
 import logo from './logo.svg';
-import product1 from './product 1logo.png';
-import product2 from './product 2logo.png';
+import product1 from './png logo.png';
+import product2 from './everts logo (2).png';
 import logo1 from './achievements1.png';
 import logo2 from './achievements2.jpg';
 import logo3 from './achievements3.png';
 import award from './award.png';
+import product1a from './product1a.png';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -12,11 +13,7 @@ import './App.css';
 
 function App() {
   return (
-    // <div className="App">
-      
-    //     <img src={banner} className="App-logo" alt="logo" />
-      
-    // </div>
+
     <div className="App">
       <div className="banner">
         <div className="content">
@@ -31,27 +28,68 @@ function App() {
       
       <div className="product">
         <div class="row">
-            <div class="col-md-6 how-img">
-               <img src={product1}class=" img-fluid" alt=""/>
+            <div class="col-md-6 product-img">
+                <div id="carouselFindMyLocator" className="carousel slide" data-ride="carousel">
+                  <div className="carousel-inner">
+                    <div className="carousel-item active">
+                      <img src={product1} className="d-block w-100" alt="Product 1a"/>
+                    </div>
+                    <div className="carousel-item">
+                      <img src={product1a} className="d-block w-100" alt="Product 1b"/>
+                    </div>
+                    <div className="carousel-item">
+                      <img src={product1} className="d-block w-100" alt="Product 1c"/>
+                    </div>
+                  </div>
+                  <a className="carousel-control-prev" href="#carouselFindMyLocator" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
+                  </a>
+                  <a className="carousel-control-next" href="#carouselFindMyLocator" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
+                  </a>
+                </div>
+              
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 product-info">
               <h4>FindMyLocator</h4>
               <h4 class="subheading">Effortless Element Identification</h4>
               <p class="text-muted"> Locate unique elements within the Document Object Model (DOM) structure with just a single click. No more manual searching!</p>
             </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 product-info">
             <h4>QAEverest</h4>
             <h4 class="subheading">GetLance makes it easy to connect with clients and begin doing great work.</h4>
             <p class="text-muted">This groundbreaking platform leverages AI to automate manual test case generation, enabling faster and more efficient testing cycles</p>
-            </div>
-            <div class="col-md-6 how-img">
-            <img src={product2} class=" img-fluid" alt=""/>
           </div>
+              <div class="col-md-6 product-img">
+                <div id="carouselQAEverest" className="carousel slide" data-ride="carousel">
+                  <div className="carousel-inner">
+                    <div className="carousel-item active">
+                      <img src={product1} className="d-block w-100" alt="Product 1a"/>
+                    </div>
+                    <div className="carousel-item">
+                      <img src={product2} className="d-block w-100" alt="Product 1b"/>
+                    </div>
+                    <div className="carousel-item">
+                      <img src={product1} className="d-block w-100" alt="Product 1c"/>
+                    </div>
+                  </div>
+                  <a className="carousel-control-prev" href="#carouselQAEverest" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
+                  </a>
+                  <a className="carousel-control-next" href="#carouselQAEverest" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
+                  </a>
+                </div>
+             </div>
         </div>
-        
       </div>
+      
       <h1>Our Achievements</h1>
       <div className="Achievements">
         <div className="logo-item">
